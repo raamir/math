@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="../sweetalert-dev.js"></script>
+  
+  <script type="text/javascript" src="../externaljava.js"></script>
+  
+  <link rel="stylesheet" href="../sweetalert.css">
+  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+  <link href="../mystylesheet.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">
+ 
+   $(function() {
+            $( "#draggable-1" ).draggable();
+            $( "#draggable-2" ).draggable();
+            $( "#draggable-3" ).draggable();
+            $( "#draggable-4" ).draggable();
+            $( "#droppable-1" ).droppable({
+               drop: function( event, ui ) {
+                  $( this )
+                  .addClass( "ui-state-highlight" );
+               }
+            });
+				
+            $( "#droppable-2" ).droppable({
+               drop: function( event, ui ) {
+                  $( this )
+                  .addClass( "ui-state-highlight" );
+               }
+            });
+				
+            $( "#droppable-3" ).droppable({
+               drop: function( event, ui ) {
+                  $( this )
+                  .addClass( "ui-state-highlight" );
+               }
+            });
+           $( "#droppable-4" ).droppable({
+               drop: function( event, ui ) {
+                  $( this )
+                  .addClass( "ui-state-highlight" );
+               }
+            });
+				
+         });
+      </script>
+  <title>Subtraction Quiz</title>
+</head>
+<body class="container">
+  <nav class="navbar navbar-default size"></nav>
+  <div class="row">
+    <div class="col-sm-8">
+      <h3 class="text-info">Subtraction Quiz</h3>
+      <div id="text">
+        <h3>Subtract and drop the correct number next to the image:</h3><br/>     
+        <p> </p>
+        <div class="container"> 
+        <table class="table table-responsive table-bordered widthTable2"> 
+          <tbody>
+            <tr>
+              <td>
+                <img src="../Shapes/ant.png" class="img-responsive widthEmoji image-container3"><img src="../Shapes/minus.png" class="img-responsive widthEmoji image-container3"><img src="../Shapes/ant.png" class="img-responsive widthEmoji image-container3"><td class="size2" id="droppable-1">
+              </td>
+            </tr>
+            <tr>
+              <td><img src="../Shapes/burger.png" class="img-responsive widthEmoji image-container3"><img src="../Shapes/minus.png" class="img-responsive widthEmoji image-container3"><img src="../Shapes/ant.png" class="img-responsive widthEmoji image-container3"><td class="size2" id="droppable-2"></td>
+            </tr>
+            <tr>
+          <td><img src="../Shapes/corn.png" class="img-responsive widthEmoji image-container3"><img src="../Shapes/minus.png" class="img-responsive widthEmoji image-container3"><img src="../Shapes/palmtree.png" class="img-responsive widthEmoji image-container3"><td class="size2" id="droppable-3"></td>
+      </tr> 
+    </tbody>
+    </table>
+    <br/>
+  </div>
+  <div class="row">
+      <div class="col-md-3">
+        <img src="../Shapes/number2a.png" class="imagesDiv dragHeight" id="draggable-1">
+      </div>
+      <div class="col-md-3">
+        <img src="../Shapes/number1a.png" class="imagesDiv dragHeight" id="draggable-2">
+      </div>
+      <div class="col-md-3">
+        <img src="../Shapes/number0.png" class="imagesDiv dragHeight" id="draggable-3">
+      </div>
+      <div class="col-md-3">
+        <img src="../Shapes/number7.png" class="imagesDiv dragHeight" id="draggable-4">
+      </div>
+    </div>
+    <div class="row">
+     <p></p>
+      <p class="submit"><button class="btn btn-info btn-lg pull-center" onClick="JSalert4()" id="Done">Done</button> <a href="quiz12.html">
+    <button type="button" class="btn btn-success btn-lg pull-right" id="next" style="display:none">Next</button>
+  </a>
+  <a href="sub11ans.html">
+    <button type="button" class="btn btn-warning btn-lg pull-left" id="reveal" style="display:none">Reveal answers</button>
+  </a></p>
+  </div>
+</div>
+</div>
+
+    <div class="col-sm-4">
+      <h3 class="wordTopcorner">Emoji Key</h3>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="rightAlign"><img src="../Shapes/ant.png" class="margin widthEmoji"> <font size="5"> = 1</font></div>
+        </div>
+        <div class="col-sm-6">
+          <div class=""><img src="../Shapes/burger.png" class="margin widthEmoji"> <font size="5"> = 2</font></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="rightAlign"><img src="../Shapes/redleaf.png" class="margin widthEmoji3"> <font size="5"> = 3</font></div>
+        </div>
+        <div class="col-sm-6">
+          <div class=""><img src="../Shapes/palmtree.png" class="margin widthEmoji3"> <font size="5"> = 4</font></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="rightAlign"><img src="../Shapes/mushroom.png" class="margin widthEmoji3"> <font size="5"> = 5</font></div>
+        </div>
+        <div class="col-sm-6">
+          <div class=""><img src="../Shapes/corn.png" class="margin widthEmoji3"> <font size="5"> = 6</font></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="rightAlign"><img src="../Shapes/basketball.png" class="margin widthEmoji3"> <font size="5"> = 7</font></div>
+        </div>
+        <div class="col-sm-6">
+          <div class=""><img src="../Shapes/football.png" class="margin widthEmoji3"> <font size="5"> = 8</font></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="rightAlign"><img src="../Shapes/sunflower.png" class="margin widthEmoji3"> <font size="5"> = 9</font></div>
+        </div>
+        <div class="col-sm-6">
+          <div class=""><img src="../Shapes/pancakes.png" class="margin widthEmoji3"> <font size="5"> = 10</font></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <div class="alignCenter"><img src="../Shapes/minibus.png" class="margin widthEmoji3"> <font size="5"> = 0</font></div>
+        </div>
+      </div>
+    </div>
+  </div>    
+    
+  </body>
+</html>

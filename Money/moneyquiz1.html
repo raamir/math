@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="../sweetalert-dev.js"></script>
+  
+  <script type="text/javascript" src="../externaljava.js"></script>
+  
+  <link rel="stylesheet" href="../sweetalert.css">
+  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="../mystylesheet.css" rel="stylesheet" type="text/css">
+  <title>Money Quiz</title>
+</head>
+<body class="container">
+  <nav class="navbar navbar-default size"></nav>
+  <h3 class= "text-info">Money Quiz</h3>
+  <br>
+  <h2>How many cents do you see?</h2>
+  <br/>
+  <div class="container"> <p class="alignCents"><img src="../Shapes/onecent.png" class="widthCents"><img src="../Shapes/onecent.png" class="widthCents"></p> </div>
+  <br/>
+ <div class="container">
+  <div class="row custom">
+    <div class="col-md-3">
+      <input type="radio" name="process" value="d" id="block-d" class= "input-hidden"/>
+      <label class="choice" for="block-d">
+        <img src= "../Shapes/number7.png" class="widthHeight">
+      </label>
+    </div>
+    <div class="col-md-3">
+      <input type="radio" name="process" value="b" id="block-b" class= "input-hidden"/>
+      <label class="choice" for="block-b">
+        <img src="../Shapes/number3.png" class="widthHeight">
+      </label>
+    </div>
+    <div class="col-md-3">
+      <input type="radio" name="process" value="c" id="block-c" class="input-hidden "/>
+      <label class="choice" for="block-c">
+        <img src="../Shapes/number1a.png" class="widthHeight">
+      </label>
+    </div>
+     <div class="col-md-3">
+      <input type="radio" name="process" value="a" id="block-a" class="input-hidden"/>
+      <label class="choice" for="block-a">
+        <img src="../Shapes/number2a.png" class="widthHeight">
+      </label>
+    </div>
+  </div>
+  </div>
+  <p></p>
+<p class="submit"><button class="btn btn-info btn-lg" onClick="JSalert()" id="submit" > Submit</button>
+  <a href="moneyquiz2.html">
+    <button type="button" class="btn btn-success btn-lg next" id="next" style="display:none">Next</button>
+  </a></p>
+  </body>
+</html>
